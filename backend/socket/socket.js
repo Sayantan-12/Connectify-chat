@@ -8,7 +8,7 @@ const server = http.createServer(app); // A server is created on the top of the 
 
 const io = new Server(server,{
     cors:{
-        origin:['http://localhost:5173'],
+        origin:['https://connectify-chat.onrender.com'],
         methods:["GET","POST"]
     }
 });

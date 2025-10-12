@@ -15,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
   useEffect(() => {
     if (!authUser) return;
 
-    const newSocket = io("http://localhost:3000", {
+    const newSocket = io("https://connectify-chat.onrender.com", {
       query: { userId: authUser._id },
     });
 

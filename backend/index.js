@@ -20,7 +20,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://connectify-chat.onrender.com",
     credentials: true,
   })
 );
